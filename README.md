@@ -2,6 +2,9 @@
 
 A public, interactive portfolio for Paolo Sotelo. It presents client websites, products, AI workflows, automation, and practical tools through concise case studies and safe browser-only demonstrations.
 
+- Live site: <https://paolo-sotelo-portfolio.vercel.app>
+- Source: <https://github.com/Paolo562982/paolo-sotelo-portfolio>
+
 ## Local development
 
 Requires Node.js 22 or newer.
@@ -26,8 +29,8 @@ The end-to-end suite reuses an existing local server when one is running. Instal
 
 Project data lives in `src/content/projects.ts`. Every published entry must be explicitly marked `publish: true`; tests reject known private terms and local filesystem paths. Interactive previews are synthetic and do not call APIs or write outside component state.
 
-Review biography copy, client claims, project outcomes, links, and media before the first public deployment. Do not add credentials or real environment files.
+Review biography copy, client claims, project outcomes, links, and media before publishing content changes. Do not add credentials or real environment files.
 
 ## GitHub and Vercel
 
-The intended workflow is a public GitHub repository with Vercel Git integration. Feature branches receive preview deployments; approved `main` deployments become production. Preview environments are marked no-index, while production exposes the sitemap.
+The repository is connected to Vercel through Git integration. Feature branches receive preview deployments; updates to `main` become production. Preview environments are marked no-index, while production exposes the sitemap.
